@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My CrazyGames (Offline Games)</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      background: #f2f2f2;
+    }
+    header {
+      background: #333;
+      color: white;
+      padding: 20px;
+      text-align: center;
+      font-size: 24px;
+    }
+    .games-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 20px;
+      padding: 20px;
+    }
+    .game-card {
+      background: white;
+      border-radius: 10px;
+      overflow: hidden;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    }
+    .game-card iframe {
+      width: 100%;
+      height: 400px;
+      border: none;
+    }
+    .game-title {
+      text-align: center;
+      font-size: 18px;
+      padding: 10px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    My CrazyGames (Offline Version) 🎮
+  </header>
+  <div class="games-grid">
+    <div class="game-card">
+      <iframe src="games/snake/index.html"></iframe>
+      <div class="game-title">Snake Game</div>
+    </div>
+    <div class="game-card">
+      <iframe src="games/tetris/index.html"></iframe>
+      <div class="game-title">Tetris</div>
+    </div>
+    <div class="game-card">
+      <iframe src="games/2048/index.html"></iframe>
+      <div class="game-title">2048</div>
+    </div>
+    <div class="game-card">
+      <iframe src="games/flappybird/index.html"></iframe>
+      <div class="game-title">Flappy Bird</div>
+    </div>
+    <div class="game-card">
+      <iframe src="games/breakout/index.html"></iframe>
+      <div class="game-title">Breakout</div>
+    </div>
+  </div>
+</body>
+</html>
